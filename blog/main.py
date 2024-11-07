@@ -4,7 +4,7 @@ from fastapi import FastAPI,HTTPException,status
 from sqlmodel import select
 
 
-from .routers import users, blogs
+from .routers import users, blogs , authentication
 from .dependencies import SessionDep
 from .database import create_db_and_tables 
 
@@ -22,6 +22,8 @@ def on_startup():
     create_db_and_tables()
 
 
+app.include_router(authentication.router)
 app.include_router(users.router)
 app.include_router(blogs.router)
+
 
