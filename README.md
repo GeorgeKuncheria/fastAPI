@@ -12,6 +12,7 @@ FastAPI is known for its ease of use, automatic OpenAPI documentation, and async
 ## Setup
 
 1. **Clone this repository** (or create your own FastAPI project):
+
    ```bash
    git clone git@github.com:GeorgeKuncheria/fastAPI.git
    cd fastapi-basics
@@ -25,4 +26,14 @@ source env/bin/activate  # On Windows, use `env\Scripts\activate`
 ```
 
 
+3. **Install requirements txt file from virtual environment** (recommended):
 
+```bash
+pip3 install -r requirements.txt
+```
+
+4. **Run main.py txt file**:
+
+```bash
+fastapi dev blog/main.py
+```
