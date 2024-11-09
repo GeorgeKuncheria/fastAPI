@@ -4,4 +4,4 @@ SQLAlchemy
 sqlmodel
 fastapi[standard]
 passlib[bcrypt]
-
+pyjwt

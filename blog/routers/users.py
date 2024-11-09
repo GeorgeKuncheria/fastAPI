@@ -3,8 +3,6 @@ from sqlmodel import select
 
 from ..dependencies import SessionDep
 
-from ..models import UserModel
-from ..hashing import Hash
 from ..schemas import User,ShowUser
 from ..repository.userRepo import createUser, selectUser
 
